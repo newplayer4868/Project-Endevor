@@ -21,7 +21,6 @@ https://aluminum-class-9f5.notion.site/Project-Endevor-Boss-Rush-3210538b4afd800
 ---
 
 **Stacks**  
-![Godot](https://img.shields.io/badge/Godot%20Engine-478CBF?logo=godotengine&logoColor=fff)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Godot](https://img.shields.io/badge/Godot%20Engine-478CBF?style=for-the-badge&logo=godotengine&logoColor=fff)
 
 </div>
