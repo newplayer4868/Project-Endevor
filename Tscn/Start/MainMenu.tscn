@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://brotvfce4k2sy"]
+
+[ext_resource type="Script" uid="uid://dnls20srt0mjv" path="res://Tscn/Start/main_menu.gd" id="1_nolwx"]
+
+[node name="MainMenu" type="Control" unique_id=1356956818]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nolwx")
+
+[node name="Background" type="ColorRect" parent="." unique_id=948594287]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=651782068]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -146.0
+offset_top = -226.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="ButtonList" type="VBoxContainer" parent="CenterContainer" unique_id=470815662]
+layout_mode = 2
+
+[node name="BtnStart" type="Button" parent="CenterContainer/ButtonList" unique_id=178528363 groups=["lang_buttons"]]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="BtnSettings" type="Button" parent="CenterContainer/ButtonList" unique_id=1757093561 groups=["lang_buttons"]]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="BtnExit" type="Button" parent="CenterContainer/ButtonList" unique_id=1945336325 groups=["lang_buttons"]]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="BtnExtra1" type="Button" parent="CenterContainer/ButtonList" unique_id=1143907082 groups=["lang_buttons"]]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="BtnExtra2" type="Button" parent="CenterContainer/ButtonList" unique_id=796666791 groups=["lang_buttons"]]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="SettingsPanel" type="ColorRect" parent="." unique_id=542794122]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="SettingsPanel" unique_id=348064005]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -29.5
+offset_right = 20.0
+offset_bottom = 29.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsPanel/PanelContainer" unique_id=2002159295]
+layout_mode = 2
+
+[node name="LBL_SELECT" type="Label" parent="SettingsPanel/PanelContainer/VBoxContainer" unique_id=954627537 groups=["lang_buttons"]]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "12"
+
+[node name="LangOptionButton" type="OptionButton" parent="SettingsPanel/PanelContainer/VBoxContainer" unique_id=895102776]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SettingsPanel/PanelContainer/VBoxContainer" unique_id=345551379]
+layout_mode = 2
+
+[node name="BtnConfirm" type="Button" parent="SettingsPanel/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1750645475 groups=["lang_buttons"]]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="BtnCancel" type="Button" parent="SettingsPanel/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1654723779 groups=["lang_buttons"]]
+layout_mode = 2
+size_flags_horizontal = 8

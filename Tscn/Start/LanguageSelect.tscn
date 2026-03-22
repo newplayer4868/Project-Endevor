@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://drgmwvwjsuxt8"]
+
+[ext_resource type="Script" uid="uid://c818fwi1c3cii" path="res://Tscn/Start/language_select.gd" id="1_htrtu"]
+
+[node name="LanguageSelect" type="Control" unique_id=2138287711]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_htrtu")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=271207369]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.17930749, 0.17838335, 0.22553062, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1490273809]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -29.5
+offset_right = 16.0
+offset_bottom = 29.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1170892850]
+layout_mode = 2
+text = "🔠언어 선택 / Select Language"
+
+[node name="LangOptionButton" type="OptionButton" parent="VBoxContainer" unique_id=507140901]
+layout_mode = 2
+
+[node name="BtnConfirm" type="Button" parent="VBoxContainer" unique_id=22314289]
+layout_mode = 2
+
+[connection signal="pressed" from="VBoxContainer/BtnConfirm" to="." method="_on_btn_confirm_pressed"]

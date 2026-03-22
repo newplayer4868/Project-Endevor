@@ -1,0 +1,28 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Project_Endervor"
+run/main_scene="uid://d2yrkffieu6rf"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="res://Image/icon.svg"
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://Localization/Localization.en.translation", "res://Localization/Localization.ko.translation")
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
