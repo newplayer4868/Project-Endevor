@@ -25,7 +25,7 @@ https://aluminum-class-9f5.notion.site/Project-Endevor-Boss-Rush-3210538b4afd800
 
 
 신기한게 많네요
-<div>
+<div align="center">
 그냥 추가
   ---
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
