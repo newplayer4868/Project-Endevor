@@ -4,12 +4,12 @@ extends Node
 @onready var splash_godot = preload("res://Tscn/Start/SplashGodot.tscn")
 
 var is_skipped: bool = false 
+# 사용자가 타이틀 애니메이션을 스킵했는가? 에 대한 트루폴스
 
 func _ready():
 	# 언어 선택 창 팝업용 세팅 삭제 코드
 	# DirAccess.remove_absolute("user://settings.cfg")
 	start_sequence()
-#로고창 스킵하기 
 func _unhandled_input(event):
 	#스페이스바 or 마우스 클릭 시 이벤트 스킵
 	if event is InputEventMouseButton or event.is_action_pressed("ui_accept"):
@@ -39,16 +39,11 @@ func determine_next_scene():
 	var config = ConfigFile.new()
 	var err = config.load("user://settings.cfg")
 	
-	if err != OK:
-		print("로그: 설정 파일 없음. [언어 선택 화면]으로 이동.")
+	if err != OK:# 설정 파일 없으면 언어 선택화면으로 이동
 		get_tree().change_scene_to_file("res://Tscn/Start/LanguageSelect.tscn")
-	else:
+	else: 
 		var saved_locale = config.get_value("general", "locale", "ko")
-		print("로그: 설정 기록 발견! 적용된 로케일: ", saved_locale)
-		
-		# 💡 엔진 번역 서버에 즉시 적용 (매우 중요)
 		TranslationServer.set_locale(saved_locale)
-		
 		get_tree().change_scene_to_file("res://Tscn/Start/MainMenu.tscn")
 	
 	set_process_unhandled_input(false)
